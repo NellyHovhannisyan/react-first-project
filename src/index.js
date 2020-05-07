@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import greeting, {idGen as func, hello} from './tools';
+// import * as tools from './tools';
+
+// console.log(func());
+// console.log(hello());
+// console.log(tools.hello());
+
 
 ReactDOM.render(
   <React.StrictMode>
