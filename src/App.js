@@ -1,28 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Person from './components/Person';
+// import Person from './components/Person';
 import Fruits from './components/Fruits';
+// import {idGen as idGenerator, Hello, getThis} from './tools';
+// import * as newObj from './tools';
+import User from './components/User';
+
+
+// console.log(idGenerator());
+// console.log(newObj.Hello());
+// newObj.getThis();
+// getThis();
 
 function App() {
+  
+// const {Hello} =newObj; 
+// const components =[
+//   <p>text1</p>,
+//   <p>text2</p>,
+//   <p>text3</p>,
+// ];
+ const surname= 'Gates'
   return (
+    
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Person />
-      <Fruits />
+      <User name="Bill" surname={surname}/>
+      <User name="Joe" surname='Doe'/>
+      <User name="Jack" surname='Daniels'/>
+
+      {/* {components[0]}
+       <Hello />
+      <Person />*/
+       <Fruits /> }
     </div>
   );
 }

@@ -1,10 +1,22 @@
-export function idGen (){
+ import React from 'react';
+ 
+ function idGen (){
     return Math.random().toString(32);
 }
 
-export function hello (){
-    return "Hello React!";
+ function Hello (){
+    console.log(this);
+    return (
+        <div> "Hello React!"</div>
+        );
+  
 }
+
+function getThis (){
+    console.log(this);
+}
+
+export{idGen, Hello, getThis};
 
 const greeting = "Hello World";
 
