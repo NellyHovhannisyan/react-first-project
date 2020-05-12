@@ -6,7 +6,8 @@ import Fruits from './components/Fruits';
 // import {idGen as idGenerator, Hello, getThis} from './tools';
 // import * as newObj from './tools';
 import User from './components/User';
-
+import Animal from './components/Animal';
+import Input from './components/Input';
 
 // console.log(idGenerator());
 // console.log(newObj.Hello());
@@ -28,7 +29,8 @@ function App() {
       <User name="Bill" surname={surname}/>
       <User name="Joe" surname='Doe'/>
       <User name="Jack" surname='Daniels'/>
-
+      <Animal type="dog" age={0}/> 
+      <Input />
       {/* {components[0]}
        <Hello />
       <Person />*/

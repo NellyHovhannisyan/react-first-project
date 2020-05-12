@@ -8,8 +8,8 @@ function User (props){
     console.log(props);
     return (
      <div>
-         Hello Im 
-         <Name name={name} />
+         Hello Im  
+         <Name name={name} /> 
          <Surname surname={surname} />
      </div>
     )
