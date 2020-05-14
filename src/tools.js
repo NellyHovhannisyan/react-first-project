@@ -1,7 +1,7 @@
  import React from 'react';
  
  function idGen (){
-    return Math.random().toString(32);
+    return Math.random().toString(32).slice(2);
 }
 
  function Hello (){

@@ -47,3 +47,24 @@
   color:hotpink;
   font-size:24px;
 }
+
+.task-list{
+  margin: 25px 40%;
+}
+
+.task-list div{
+  height: 26px;
+}
+
+.task-view{
+  border:1px solid forestgreen;
+  height: 25px;
+  margin:0;
+  width: 280px;
+}
+
+.task-del-btn{
+  position: relative;
+  top: -26px;
+  left: 130px;
+}
