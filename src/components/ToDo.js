@@ -27,8 +27,8 @@ class ToDo extends Component {
      }
 
      removeTask = (id)=> {
-        const delId = this.state.tasks.filter(item => item.id !== id);
-        this.setState({tasks: delId});
+        const delArr = this.state.tasks.filter(item => item.id !== id);
+        this.setState({tasks: delArr});
 };
 
 
@@ -38,8 +38,8 @@ class ToDo extends Component {
 
             return (
                 <div key={el.id}>
-                <Task  task={el.task}/>
-                <button className="task-del-btn" onClick= {() => this.removeTask(el.id)}>x</button>
+                <Task deleteFromChild={() => this.removeTask(el.id)} task={el.task}/>
+                {/* <button className="task-del-btn" onClick= {() => this.removeTask(el.id)}>x</button> */}
             </div>
             )
         });
