@@ -30,7 +30,7 @@ class ToDo extends Component {
         this.setState({tasks: newTasks});
 };
 
-handleCheckBox =( isChecked,id)=>()=>{
+handleCheckBox =( id)=>(isChecked)=>{
     isChecked ?     console.log("checked",id)
     : console.log('not checked',id);
         
@@ -40,12 +40,12 @@ handleCheckBox =( isChecked,id)=>()=>{
 
     render() {
       
-        const newTaskList=this.state.tasks.map(({id,task,isChecked})=>{
+        const newTaskList=this.state.tasks.map(({id,task})=>{
             return (    
                 <Task  key={id}
                  deleteFromChild={this.removeTask(id)}
                   task={task}
-                  checkCheckBox = {this.handleCheckBox(isChecked ,id)}
+                  checkCheckBox = {this.handleCheckBox(id)}
                   />
          
             )
