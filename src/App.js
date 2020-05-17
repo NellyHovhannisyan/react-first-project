@@ -9,10 +9,12 @@ import './App.css';
 // import Animal from './components/Animal';
 // import Input from './components/Input';
    import ToDo from './components/ToDo'
+import Counter from './components/Counter';
 // console.log(idGenerator());
 // console.log(newObj.Hello());
 // newObj.getThis();
 // getThis();
+
 
 function App() {
   
@@ -38,7 +40,7 @@ function App() {
        <br></br>
         <Input /> */}
       <ToDo/>
-
+       <Counter/>   
     </div>
   );
 }
